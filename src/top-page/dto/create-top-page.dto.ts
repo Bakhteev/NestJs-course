@@ -47,6 +47,12 @@ export class CreateTopPageDto {
   @IsString()
   category: string
 
+  @IsString()
+  metaTitle: string
+
+  @IsString()
+  metaDescription: string
+
   @IsOptional()
   @ValidateNested()
   @Type(() => HhDataDto)
